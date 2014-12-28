@@ -33,6 +33,8 @@ public class UnderstandingJavaFXModality extends Application {
                 Stage childStage = new Stage ();
                 childStage.setTitle("Child Window");
                 childStage.initModality(Modality.WINDOW_MODAL);
+                //childStage.initModality(Modality.APPLICATION_MODAL);
+
                 childStage.initOwner(primaryStage);
                 Button closeChildBtn = new Button ("Close Child Window");
                  closeChildBtn.setOnAction(new EventHandler<ActionEvent> (){
